@@ -42,28 +42,31 @@ listagem(){
 main(){
 	setlocale(LC_ALL, "Portuguese");
 	int opcao;
-	printf("\nDigite 1 para cadastro de produto");
-	printf("\nDigite 2 para entrada de estoque");
-	printf("\nDigite 3 para alterar o cadastro");
-	printf("\nDigite 4 para listagem de produtos");
-	printf("\nDigite a opção desejada:");
-	scanf("%d",&opcao);
-	switch(opcao){
-		case 1:
-			//cadastro
-		break;
-		case 2:
-			//entrada estoque
-		break;
-		case 3:
-			//alterar estoque
-		break;
-		case 4:
-			//listagem dos produtos
-		break;
-		default:
-			printf("\nOpção inválida!");
-	}
+	do{
+		system("cls");
+		printf("\nDigite 1 para cadastro de produto");
+		printf("\nDigite 2 para entrada de estoque");
+		printf("\nDigite 3 para alterar o cadastro");
+		printf("\nDigite 4 para listagem de produtos");
+		printf("\nDigite a opção desejada:");
+		scanf("%d",&opcao);
+		switch(opcao){
+			case 1:
+				//cadastro
+			break;
+			case 2:
+				//entrada estoque
+			break;
+			case 3:
+				//alterar estoque
+			break;
+			case 4:
+				//listagem dos produtos
+			break;
+			default:
+				printf("\nOpção inválida!");
+		}
+	}while(opcao!=0);
 		
 	return 0;
 }
